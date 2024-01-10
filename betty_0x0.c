@@ -1,32 +1,20 @@
 #include "shell.h"
 
 /**
- * print_numbers - Prints even and odd numbers
- */
-void print_numbers(void)
-{
-	int i;
-
-	for (i = 0; i < 10; i++)
-	{
-		if (i % 2 == 0)
-		{
-			printf("%d is even\n", i);
-		}
-		else
-		{
-			printf("%d is odd\n", i);
-		}
-	}
-}
-
-/**
- * main - Entry point of the program
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	print_numbers();
+	int number1, number2, sum;
+
+	number1 = 10;
+	number2 = 20;
+
+	sum = number1 + number2;
+
+	printf("The sum of %d and %d is: %d\n", number1, number2, sum);
+
 	return (0);
 }
