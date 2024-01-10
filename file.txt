@@ -1,3 +1,0 @@
-ls
-echo 'hello worls';
-pwd
