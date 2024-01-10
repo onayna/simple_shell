@@ -16,8 +16,10 @@ void display_shell_prompt(void)
 void read_user_command(char *user_input)
 {
     if (fgets(user_input, BUFFER_SIZE, stdin) == NULL)
-    { printf("\n");
-        exit(EXIT_SUCCESS);}
+    {
+        printf("\n");
+        exit(EXIT_SUCCESS);
+    }
     user_input[strcspn(user_input, "\n")] = '\0';
 }
 
